@@ -9,3 +9,9 @@
 .inputField{
     @apply border border-gray-300 rounded-xl p-2 bg-white
 }
+.frontSide{
+    @apply absolute inset-0 flex flex-col items-center justify-center bg-white rounded-lg shadow-md backface-hidden z-2
+}
+.backSide{
+    @apply absolute inset-0 flex flex-col items-center justify-center bg-white text-black rounded-lg shadow-md backface-hidden transform-[rotateY(180deg)]
+}
